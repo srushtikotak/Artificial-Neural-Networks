@@ -33,8 +33,8 @@ class ANN(object):
             output_act = output_act_1+ bout
             output = sigmoid(output_act)
             #print output.shape
+            
             #Backpropagation
-
             E = y - output
             slope_output_layer = derivatives_sigmoid(output)
             slope_hidden_layer = derivatives_sigmoid(hiddenlayer_activations)
